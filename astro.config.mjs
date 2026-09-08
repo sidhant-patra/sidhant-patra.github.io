@@ -3,6 +3,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://sidhant-patra.github.io',
+  site: 'https://sidhantpatra.com',
   output: 'static',
 });
