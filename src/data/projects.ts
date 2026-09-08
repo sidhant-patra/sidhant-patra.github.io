@@ -11,23 +11,25 @@ export const projects: Project[] = [
     tags: 'Astrodynamics · Autonomous Systems · Collision Avoidance · Optimisation',
     description:
       'Developed and validated a framework for autonomous reconfiguration of distributed satellite systems, integrating orbital dynamics, decentralised decision-making, collision avoidance and multi-objective resource optimisation.',
-links: [
-  {
-    label: 'Read TUM thesis',
-    href: 'https://mediatum.ub.tum.de/1739106',
+    links: [
+      {
+        label: 'Read TUM thesis',
+        href: 'https://mediatum.ub.tum.de/1739106',
+      },
+    ],
   },
-],
   {
     title: 'Autonomous Tracking & Pointing System',
     tags: 'GNC · State Estimation · Opto-Mechanical Systems · Space Communications',
     description:
       'Designed a satellite test-bench architecture for free-space optical communication combining mechanical pointing hardware, sensors, mathematical modelling, PID control and Kalman-filter-based state estimation.',
     links: [
-  {
-    label: 'Read technical report',
-    href: 'https://mediatum.ub.tum.de/doc/1725139/mu9x7cwwil8q1b1hd9xvihmgf.Sidhant_Patra_Internship_Report.pdf',
+      {
+        label: 'Read technical report',
+        href: 'https://mediatum.ub.tum.de/doc/1725139/mu9x7cwwil8q1b1hd9xvihmgf.Sidhant_Patra_Internship_Report.pdf',
+      },
+    ],
   },
-],
   {
     title: 'VASE Radiation-Monitoring Spacecraft',
     tags: 'Spacecraft Design · Systems Engineering · Structures · Trade Studies',
