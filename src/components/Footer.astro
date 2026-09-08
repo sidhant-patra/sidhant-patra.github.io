@@ -1,0 +1,57 @@
+---
+const year = new Date().getFullYear();
+---
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="location">Based in Germany</p>
+    <div class="footer-links">
+  <a href="https://www.linkedin.com/in/sidhant-patra7/" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="https://github.com/sidhant-patra" target="_blank" rel="noopener">GitHub</a>
+</div>
+    <p class="copyright">&copy; {year} Sidhant Patra</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    padding: 3.5rem var(--page-pad) 3rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .footer-inner {
+    max-width: 880px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+  }
+
+  .location {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+  }
+
+  .footer-links a:hover {
+    color: var(--accent);
+  }
+
+  .copyright {
+    color: var(--text-faint);
+    font-size: 0.82rem;
+  }
+</style>

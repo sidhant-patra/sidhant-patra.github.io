@@ -1,0 +1,79 @@
+---
+import { projects } from '../data/projects';
+---
+<section id="work" class="section">
+  <div class="section-inner">
+    <h2>Selected Work</h2>
+    <ul class="work-list">
+      {projects.map((project) => (
+        <li class="work-item">
+          <h3>{project.title}</h3>
+          <p class="work-tags">{project.tags}</p>
+          <p class="work-desc">{project.description}</p>
+          {project.links.length > 0 && (
+            <div class="work-links">
+              {project.links.map((link) => (
+                <a href={link.href} target="_blank" rel="noopener">
+                  {link.label} →
+                </a>
+              ))}
+            </div>
+          )}
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .work-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .work-item {
+    padding: 2.6rem 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .work-item:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .work-item h3 {
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+    max-width: 46ch;
+  }
+
+  .work-tags {
+    color: var(--accent);
+    font-size: 0.85rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .work-desc {
+    color: var(--text-muted);
+    margin-bottom: 1.1rem;
+  }
+
+  .work-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.5rem;
+  }
+
+  .work-links a {
+    font-size: 0.88rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: color 0.2s ease;
+  }
+
+  .work-links a:hover {
+    color: var(--accent);
+  }
+</style>

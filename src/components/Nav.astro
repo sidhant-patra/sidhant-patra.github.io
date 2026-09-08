@@ -1,0 +1,59 @@
+---
+---
+<header class="nav">
+  <a class="nav-name" href="#top">Sidhant Patra</a>
+<nav class="nav-links">
+  <a href="#work">Work</a>
+  <a href="#research">Research</a>
+  <a href="https://github.com/sidhant-patra" target="_blank" rel="noopener">GitHub</a>
+  <a href="https://www.linkedin.com/in/sidhant-patra7/" target="_blank" rel="noopener">LinkedIn</a>
+</nav>
+</header>
+
+<style>
+  .nav {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 2rem var(--page-pad) 0;
+    font-size: 0.9rem;
+  }
+
+  .nav-name {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--text);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.75rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--text);
+  }
+
+  @media (max-width: 760px) {
+    .nav {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .nav-links {
+      gap: 1.1rem 1.4rem;
+      font-size: 0.85rem;
+    }
+  }
+</style>

@@ -1,0 +1,97 @@
+---
+import OrbitScene from './OrbitScene.astro';
+---
+<section id="top" class="hero">
+  <OrbitScene />
+  <div class="hero-content">
+    <h1>Sidhant Patra</h1>
+    <p class="role">Space Systems & Mission Analysis Engineer</p>
+    <p class="tags">Astrodynamics · Autonomous Spacecraft · Spacecraft Design · Systems Engineering</p>
+    <p class="summary">
+      Mechanical and aerospace engineer focused on the intersection of spacecraft systems, orbital
+      dynamics, autonomous and distributed architectures, and mission engineering.
+    </p>
+    <p class="degree">M.Sc. Aerospace Engineering, Technical University of Munich.</p>
+
+<div class="hero-links">
+  <a href="#work">Research &amp; Projects</a>
+  <a href="https://github.com/sidhant-patra" target="_blank" rel="noopener">GitHub</a>
+  <a href="https://www.linkedin.com/in/sidhant-patra7/" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+    padding: 4rem var(--page-pad);
+    overflow: hidden;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 620px;
+    pointer-events: none;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    margin-bottom: 0.6rem;
+  }
+
+  .role {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    color: var(--accent);
+    margin-bottom: 1.4rem;
+  }
+
+  .tags {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .summary {
+    margin-bottom: 0.9rem;
+    color: var(--text);
+  }
+
+  .degree {
+    color: var(--text-muted);
+    margin-bottom: 2.4rem;
+  }
+
+  .hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.6rem;
+    pointer-events: auto;
+  }
+
+  .hero-links a {
+    text-decoration: none;
+    font-size: 0.92rem;
+    color: var(--text);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 0.15rem;
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+
+  .hero-links a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  @media (max-width: 640px) {
+    .hero {
+      min-height: 100vh;
+      align-items: flex-end;
+      padding-bottom: 5rem;
+    }
+  }
+</style>
